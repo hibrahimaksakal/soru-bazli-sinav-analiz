@@ -539,6 +539,10 @@
                     <span>👨‍💻</span>
                     <span class="header-link-text">Geliştirici Hakkında</span>
                 </div>
+                <div class="header-help-link" id="headerPrivacyLink">
+                    <span>🔒</span>
+                    <span class="header-link-text">Gizlilik</span>
+                </div>
             </div>
             </header>
         <section class="section">
@@ -781,6 +785,18 @@
         </div>
     </div>
 
+     <div id="privacyModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Gizlilik</h2>
+                <span class="close" data-modal="privacyModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Girilen veriler herhangi bir sunucuda depolanmamaktadır. Sayfa yenilendiği takdirde bu veriler formdan temizlenir.</p>
+                <p>Buraya bir başka örnek metin gelecek.</p>
+            </div>
+        </div>
+    </div>
 
     <script>
         // Theme Toggle Functionality
@@ -933,6 +949,11 @@
             document.getElementById('headerDeveloperLink').addEventListener('click', function() {
                 document.getElementById('developerModal').style.display = 'block';
             });
+
+             document.getElementById('headerPrivacyLink').addEventListener('click', function() {
+                document.getElementById('privacyModal').style.display = 'block';
+            });
+
         });
 
         function generateReport() {
